@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Button } from "@/components/ui/button";
+import Header from "@/components/header/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,9 +15,9 @@ const geistMono = Geist_Mono({
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#101216] w-full h-lvh">
+      <Header />
 
-      <h2>teste sfsf dcsccsc</h2>
     </div>
   );
 }
