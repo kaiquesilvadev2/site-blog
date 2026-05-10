@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import ActiveLink from "../active-link";
+import { LogoSite } from "../logo/logoSites";
 
 export default function Header() {
 
@@ -9,12 +10,11 @@ export default function Header() {
             <div className="max-w-7xl m-auto px-4 sm:px-4 ls:px-80">
 
                 <div className="flex justify-between h-16 items-center" >
-                    <Link href="/" className="text-white">logo</Link>
-
+                    <LogoSite />
                     <nav className=" flex justify-center items-center gap-6">
                         <ActiveLink href="/">Inicio</ActiveLink>
                         <ActiveLink href="/blog">Blog</ActiveLink>
-                        <Button variant={"secondary"} asChild>
+                        <Button asChild>
                             <Link href="/comecar"> Começar</Link>
                         </Button>
                     </nav>
