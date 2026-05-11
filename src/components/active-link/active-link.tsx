@@ -21,21 +21,20 @@ export default function ActiveLink({
     // Verifica se o link corresponde à página atual
     const isCurrentPath =
         router.asPath == href || // rota atual igual ao href
-        router.asPath == rest.as || // rota atual igual ao "as"
-        router.asPath.startsWith(String(rest.as)); // rota atual começa com "as"
+        router.asPath == rest.as  // rota atual igual ao "as"
 
     return (
         <Link
             href={href}
 
             // Junta classes CSS dinamicamente
-            className={cn('text-sm font-medium transition-colors hover:text-blue-500',
+            className={cn('text-sm font-medium transition-colors hover:text-blue-300 ',
 
                 // se a rota estiver ativa aplica azul
                 // senão aplica cor padrão
                 isCurrentPath
-                    ? 'text-blue-500'
-                    : 'text-muted-foreground'
+                    ? 'text-blue-200'
+                    : 'text-gray-200'
             )}
 
             // espalha outras props do Link
