@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/header/header";
 import { HeroSection } from "@/components/hero-section/hero-section";
 import { FeatureSection } from "@/components/feature-section";
+import { SupportSection } from "@/components/support-section";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +21,7 @@ export default function Home() {
     <>
       <HeroSection />
       <FeatureSection />
+      <SupportSection />
     </>
   )
 }

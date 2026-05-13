@@ -11,6 +11,8 @@
 
   --color-background-secondary: #101216;
   --color-background: #16181D;
+  --gradient-dark: linear-gradient(90deg, #16181D 0%, #101216 100%);
+
 
 
   --color-white: #FFFFFF;

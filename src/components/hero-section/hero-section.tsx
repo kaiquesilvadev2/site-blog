@@ -7,7 +7,7 @@ import { ButtonCreateStore } from "../button-create-store"
 
 export const HeroSection = () => {
     return (
-        <section className="mt-24 pb-10 md:pb-20">
+        <section className="mt-24 pb-10">
             <SiteContainer className="px-5 sm:px-4">
 
                 <div className="flex">
