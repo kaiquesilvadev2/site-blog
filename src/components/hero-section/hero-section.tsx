@@ -3,11 +3,12 @@ import { SiteContainer } from "../site-Container"
 import { Button } from "../ui/button"
 import { ArrowRight, Clock, Store } from "lucide-react"
 import { Arrow } from "radix-ui/internal"
+import { ButtonCreateStore } from "../button-create-store"
 
 export const HeroSection = () => {
     return (
-        <section className="mt-24">
-            <SiteContainer>
+        <section className="mt-24 pb-10 md:pb-20">
+            <SiteContainer className="px-5 sm:px-4">
 
                 <div className="flex">
                     <div className="flex flex-col gap-10 sm:gap-12">
@@ -30,7 +31,7 @@ export const HeroSection = () => {
                         </div>
 
                         <div className="flex flex-col gap-3.5 w-fit m-auto sm:m-0">
-                            <Button className="rounded-full bg-blue-300 h-11 w-auto text-body-xs font-normal text-gray-100 ">Criar loja grátis <ArrowRight /> </Button>
+                            <ButtonCreateStore className="w-auto">Criar loja grátis</ButtonCreateStore>
                             <p className="text-body-xs text-gray-300">Não precisa de cartão de crédito</p>
                         </div>
                     </div>
