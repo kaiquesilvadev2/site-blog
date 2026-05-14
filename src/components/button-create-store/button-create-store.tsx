@@ -9,7 +9,7 @@ export const ButtonCreateStore = ({
     children, className
 }: ButtonCreateStoreProps) => {
     return (
-        <Button className={`${className} rounded-full bg-blue-300 h-11 text-body-xs font-normal text-gray-100`} >
+        <Button className={`${className} rounded-full bg-blue-300 h-11 text-base font-normal px-5 text-gray-100`} >
             {children}
 
             <ArrowRight />
