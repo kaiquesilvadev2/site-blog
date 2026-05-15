@@ -1,5 +1,5 @@
+import { SiteContainer } from "@/components/site-Container"
 import Image from "next/image"
-import { SiteContainer } from "../site-Container"
 
 const testimonials = [
     {
@@ -26,11 +26,11 @@ export const CustomerStorySection = () => {
         <section>
             <SiteContainer className="px-5 sm:px-4">
                 <div className="flex flex-col gap-8 md:gap-12 py-20 md:py-32">
-                    <h2 className="text-gray-100 text-2xl text-center md:text-3xl font-bold">Quem utiliza, aprova!</h2>
+                    <h2 className="font-sans text-gray-100 text-2xl text-center md:text-3xl font-bold">Quem utiliza, aprova!</h2>
 
                     <div className="flex flex-col md:flex-row gap-4 md:gap-6 w-full">
                         {testimonials.map(itens => (
-                            <div className="p-6 md:p-10 rounded-xl bg-gray-600 border border-gray-100/10 flex flex-col gap-8 md:gap-10 flex-1">
+                            <div key={itens.id} className="p-6 md:p-10 rounded-xl bg-gray-600 border border-gray-100/10 flex flex-col gap-8 md:gap-10 flex-1">
                                 <p className="text-action-md text-gray-200/80 leading-6">
                                     {itens.feedback}
                                 </p>

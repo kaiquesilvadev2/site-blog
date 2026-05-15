@@ -1,12 +1,18 @@
+import { BenefitCard } from "@/components/benefit-card"
+import { SiteContainer } from "@/components/site-Container"
 import { HeartHandshake, icons, PaintbrushVertical, Store } from "lucide-react"
-import { SiteContainer } from "../site-Container"
-import { BenefitCard } from "../benefit-card"
+
 
 export const SupportSection = () => {
     return (
-        <section className="bg-background py-12">
-            <SiteContainer className="px-5 sm:px-4 flex flex-col gap-9 md:gap-12">
-                <h2 className="text-gray-100 text-2xl text-center md:text-3xl font-bold max-w-[30.6rem] m-auto">Sua loja de afiliados, simples, do jeito que deveria ser</h2>
+        <section className="bg-background py-12 relative">
+
+            <div className="absolute inset-0 hidden md:block bg-[url(/background-features.svg)] bg-cover bg-conter bg-no-repeat opacity-90" />
+
+            <SiteContainer className=" relative px-5 sm:px-4 flex flex-col gap-9 md:gap-12">
+                <h2 className="font-sans text-gray-100 text-2xl text-center md:text-3xl font-bold max-w-[30.6rem] m-auto">
+                    Sua loja de afiliados, simples, do jeito que deveria ser
+                </h2>
 
 
                 <div className="flex flex-col md:flex-row gap-4 md:gap-6 ">
@@ -33,7 +39,6 @@ export const SupportSection = () => {
                     />
 
                 </div>
-
             </SiteContainer>
         </section>
     )

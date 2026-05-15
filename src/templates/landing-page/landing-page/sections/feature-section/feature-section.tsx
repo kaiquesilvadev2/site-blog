@@ -1,9 +1,8 @@
+import { ButtonCreateStore } from "@/components/button-create-store"
+import { FeatureCard } from "@/components/feature-card"
+import { FeatureContent } from "@/components/feature-content"
+import { SiteContainer } from "@/components/site-Container"
 import Image from "next/image"
-import { FeatureCard } from "../feature-card"
-import { SiteContainer } from "../site-Container"
-import { Button } from "../ui/button"
-import { ButtonCreateStore } from "../button-create-store"
-import { FeatureContent } from "../feature-content"
 
 export const FeatureSection = () => {
     return (

@@ -1,8 +1,9 @@
+import ActiveLink from "@/components/active-link";
+import { LogoSite } from "@/components/logo/logoSites";
+import { SiteContainer } from "@/components/site-Container";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Button } from "../ui/button";
-import ActiveLink from "../active-link";
-import { LogoSite } from "../logo/logoSites";
-import { SiteContainer } from "../site-Container";
+
 
 export default function Header() {
 

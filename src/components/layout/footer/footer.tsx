@@ -1,8 +1,9 @@
+import { LogoSite } from "@/components/logo/logoSites"
+import { SiteContainer } from "@/components/site-Container"
+import { TextCustom } from "@/components/text"
 import Image from "next/image"
 import Link from "next/link"
-import { TextCustom } from "../text"
-import { LogoSite } from "../logo/logoSites"
-import { SiteContainer } from "../site-Container/site-container"
+
 
 
 export const Footer = () => {
