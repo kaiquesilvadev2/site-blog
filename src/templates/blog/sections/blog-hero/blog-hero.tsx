@@ -1,5 +1,5 @@
 import { SiteContainer } from "@/components/site-Container"
-import { Search } from "@/components/search/search"
+import { Search } from "@/templates/blog/component/search/search"
 
 export default function BlogHero() {
     return (
