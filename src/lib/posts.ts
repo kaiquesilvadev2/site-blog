@@ -22,3 +22,27 @@ export function getPostBySlug(slug: string) {
         content,
     };
 }
+
+export function getAllPosts() {
+    const slugs = getPostSlugs();
+
+    const posts = slugs.map((slug) => {
+        const { frontmatter } = getPostBySlug(slug);
+
+        return {
+            slug: slug.replace(".mdx", ""),
+
+            title: frontmatter.title,
+            description: frontmatter.description,
+            date: frontmatter.date,
+            image: frontmatter.image,
+
+            author: {
+                name: frontmatter.author.name,
+                avatar: frontmatter.author.avatar,
+            },
+        };
+    });
+
+    return posts;
+}

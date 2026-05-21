@@ -12,7 +12,6 @@ const nextConfig: NextConfig = {
 
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 
-  turbopack: {},
 };
 
 export default withContentlayer(withMDX(nextConfig));
